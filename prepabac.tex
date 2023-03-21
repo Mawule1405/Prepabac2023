@@ -1,0 +1,140 @@
+\documentclass[12pts]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+%Mise en page du document
+\usepackage[top=1.5cm,bottom=1.5cm,left=1.5cm,right=1cm]{geometry}
+
+
+%Ce qui concerne l'auteur
+\author{HELOU Komlan Mawulé}
+\date{\today}
+\title{PREPA BAC: MATHEMATIQUES}
+
+
+%Les packages importés
+\usepackage{amsmath,wasysym,amssymb}
+\usepackage{tabularx}
+
+
+%Début du document: il sera éditer en deux partie. La première les exercices et la deuxièmes les corrigés
+\begin{document}
+	\maketitle
+	%Première partie: elle comprend 6 chapitres(Nombres complexes et transformations du plan, suite numérique, statistique, Dénombrement et probabilité, Equation différentielle, Programmation linéaire et l'étude de fonction nyumérique)%
+	\part{RECCUEILS EXERCICES}
+	\chapter{Nombres complexes et transformations du plan}
+	%Début de l'exercice 1
+	\section*{EXERCICE 1}
+		On considère dans l'ensemble $\mathbb{C}$ des nombres complexes, le polynôme $P$ définie par: $P(z)=z^3+(-7+2i)z^2+(15-4i)z-25+10i$.
+		\begin{enumerate}
+			\item 
+				\begin{enumerate}
+					\item Vérifier que: $P(5-2i)=0$
+					\item Résoudre dans $\mathbb{C}$ l'équation $P(z)=0$.
+				\end{enumerate}
+			\item \begin{enumerate}
+					Soit $S$ la similitude plane directe de centre $I$ d'affixe $z_1=-3-2i$ et qui transforme le point $A$ d'affixe $z_A=1+2i$ en $B$ d'affixe $z_B=5-2i$.
+					\begin{enumerate}
+						\item Déterminer $f$, l'application complexe associée à $S$
+						\item Déterminer les éléments caractéristiques de $S$.
+					\end{enumerate}
+				\end{enumerate}
+		\end{enumerate}
+	%Fin de l'exercice 1
+	
+	%Début de l'exercice 2
+	\section*{EXERCICE 2}
+		On considère l'équation : $(E): z^3-9z^2+(22+12i)z-12-36i=0$
+		\begin{enumerate}
+			\item Démontrer que l'équation $(E)$ admet une solution réelle $z_1$ et une solution imaginaire pure $z_2$.
+			\item Résoudre dans $\mathbb{C}$ l'équation $(E)$
+			\item Dans le plan complexe muni d'un repère orthonormé $(o,\overrightarrow{u},\overrightarrow{v})$, on considère les points $A$, $B$ et $C$ d'affixes respectives $z_A=3$, $z_B=2i$ et $z_C=6-2i$.
+			\begin{enumerate}
+				\item Placer les points $A$, $B$ et $C$ dan le plan complexe.
+				\item Montrer que: $\frac{z_C-z_A}{z_B-z_A}$ est réel. Que peut-on en déduire?
+				\item Soit $S$ la similitude directe plane d'angle $\frac{\pi}{4}$ et de rapport $\sqrt{2}$ transformant A en B.\\
+				Donner l'écriture complexe de $S$ et préciser son centre $\Omega$
+			\end{enumerate}
+		\end{enumerate}
+	%Fin de exercice 2
+	
+	%Début de l'exercice 3
+	\section*{EXERCICE 3}
+		Le plan complexe est muni d'un repère orthonormé direct $(O,\overrightarrow{u},\overrightarrow{v})$. On considère l'application $f$ définie sur $\mathbb{C}^*$ par: $f(z)=\frac{1}{3}(z+\frac{1}{Z})$.
+		\begin{enumerate}
+			\item On désigne par $K$ le point d'affixe $f(\frac{1}{2}+i\frac{\sqrt{3}}{2})$. Déterminer les coordonnées de K.
+			\item Soit $\alpha$ un nombre réel. Résoudre dans $\mathbb{C}$ l'équation $(E): f(z)=\frac{2}{3}\cos \alpha$.
+			\item 
+				\begin{enumerate}
+					\item En déduire les solutions dans $\mathbb{C}$ de l'équation $(E'): z^4-2(\cos \alpha)z^2+1=0$ (On donnera les solutions sous forme exponentielle)
+					\item Vérifier que les solutions de $(E')$ sont deux à deux conjugués.
+					\item Décomposer le polynôme à variable réelle $x$ définie par: $P(x)=x^4-2(\cos \alpha )x^2+1$ en  un produit de deux polynômes de second degré à coefficients réels.
+				\end{enumerate} 
+			\item	On considère l'application$h$ du plan complexe dans lui-même qui a tout point $M$ d'affixe $z$ associe le point $M'$ d'affixe telle $z'$ telle que: $2(z-\frac{1}{3})=(1+i)(z'-\frac{1}{3})$.
+				\begin{enumerate}
+					\item  Démontrer que $h$ est une similitude plane directe dont on précisera les éléments caractéristiques.
+					\item Démontrer que $h$ est une composée d'une rotation et d'une homothétie dont on donnera les éléments caractéristiques.
+				\end{enumerate}
+		
+		\end{enumerate}
+	%Fin de l'exercice 3
+	
+	%Début de l'exercice 4
+	\section*{EXERCICE 4}
+		\begin{enumerate}
+			\item 
+				\begin{enumerate}
+					\item Ecrire sous forme algébrique le nombre complexe $(1+i\sqrt{3})^2$.
+					\item Résoudre dans $\mathbb{C}$ l'équation: $z^2+2z+19-18i\sqrt{3}=0$
+				\end{enumerate}
+			\item Résoudre dans $\mathbb{C} \times \mathbb{C}$ le système suivant:
+				$\left\{ \begin{array}{l}
+					z_1 + z_2 =-2 \\
+					z_1^2-z_2^2=-4+i\frac{4\sqrt{3}}{3}
+				\end{array} \right.$
+				\item Dans le plan complexe rapporté au repère orthonormal $(O,\overrightarrow{u}, \overrightarrow{v})$, on désigne par $A$, $B$, $C$ et $D$ les points d'affixes respectives $a$, $b$, $c$ et $d$ telle que $a=2+3i\sqrt{3}$; $b=\frac{1}{9}(\overline{a} - 2)$; $c=-a-2$  et $d= a-b-c$ (où $\overline{a}$ est le conjugué de a).
+			\begin{enumerate}
+				\item Déterminer les nombres complexes $b$, $c$ et $d$ puis placer les points $A$, $B$, $C$ et $D$ dans le plan complexe. (Unité graphique: 2cm et $\sqrt{3}\cong 1,7$)
+				\item Comparer $a+b$ et $b+d$. En déduire la nature du quadrilatère $ABCD$.
+				\item Calculer et interpréter géométriquement un argument du nombre complexe $Z=\frac{c-a}{d-b}$. Préciser la nature exacte de $ABCD$.
+			\end{enumerate}
+		\end{enumerate}
+	%Fin de l'exercice 4
+	
+	%Début de l'exercice 5
+	\section*{EXERCICE 5}
+	\begin{enumerate}
+		\item Dans le plan complexe muni d'un repère orthonormé $(O,\overrightarrow{u},\overrightarrow{v})$ on considère les points $A$, $B$, $C$ et $D$ d'affixes respectives: $z_A=-i$, $z_B=1+i$, $z_C=-1+2i$ et $z_D=-2$.
+			\begin{enumerate}
+				\item Placer sur une figure les points $A$, $B$, $C$ et $D$.
+				\item \begin{enumerate}
+						\item Interpréter géométriquement le module et l'argument du nombre complexe $z=\frac{z_A-z_C}{z_B-z_D}$.
+						\item Calculer le nombre complexe $z$.
+				   	  \end{enumerate}
+				\item Déterminer le module et l'argument de $z$ puis en déduire la nature du quadrilatère $ABCD$
+			\end{enumerate}
+		\item Soit $\lambda$ un nombre complexe de module $1$ différent de $1$. On définit, pour tout entier naturel $n$ la suite $(z_n)$ de nombres complexes par: $\left\{\begin{array}{l}
+																		z_0=0\\
+																		z_{n+1}=\lambda z_n-i
+																	\end{array}   \right.$
+		On note $M_n$ le point d'affixe $z_n$.
+			\begin{enumerate}
+				\item \begin{enumerate}
+						\item Calculer $z_1$, $z_2$ et $z_3$
+						\item Démontrer que $\forall n \in \mathbb{N}^*$,\quad $z_n=-(\lambda^{n-1}+\lambda^{n-2}+ \dots +\lambda+1)i$
+						\item En déduire que $\forall n \in \mathbb{N}^*, \quad z_n=\frac{1-\lambda^n}{\lambda-1}i$
+					\end{enumerate}
+				\item On suppose que pour tout entier naturel $k$ tel que $\lambda^k=1$. Démontrer que pour tout entier naturel, $z_{n+k}=z_k$.
+				\item Etude du cas $\lambda=i$
+					\begin{enumerate}
+						\item Montrer que $\forall n \in \mathbb{N}, \forall k \in \mathbb{N}, z_k=z_{n+k}$.
+						\item Montrer que $M_{n+1}$ est l'image de $M_n$ par la rotation $\varphi$ dont on précisera le centre et l'angle.
+						\item Déterminer les images de $A$, $B$, $C$ et $D$ par $\varphi$ et placer dans le repère précédent ces images.
+						\item Montrer que $\forall n\in \mathbb{N}, z_{4n+1}=i$
+					\end{enumerate}
+			\end{enumerate}
+	\end{enumerate}
+	%Fin de l'exercice 5
+	%Fin du premier chapitre	
+\end{document}
