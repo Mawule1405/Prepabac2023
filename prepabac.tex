@@ -16,6 +16,7 @@
 %Les packages importés
 \usepackage{amsmath,wasysym,amssymb}
 \usepackage{tabularx}
+\usepackage{tikz}
 
 
 %Début du document: il sera éditer en deux partie. La première les exercices et la deuxièmes les corrigés
@@ -157,6 +158,114 @@
 		\end{enumerate}
 	Dans la suite de l'exercice, on considère les valeurs de $a$ et $b$ données ci-dessus.
 	\item Gnamien prend au hasard un sachet de lait caillé de sa société.  Calculer la probabilité pour que la masse de ce sachet de lait caillé soit au moins 250\\
-	Tiéplé, la fille de Gnamien, prend au hasard de façon indépendante cins sachets de lait caillé.
+	Tiéplé, la fille de Gnamien, prend au hasard de façon indépendante cins sachets de lait caillé.\\
+	Calculer la probabilité qu'elle ait choisi exactement trois sachets de lait caillé de 220g.\\
+	On prendra l'arrondi d'ordre 3 du résultat.
+	\item Cette machine est réglée pour éliminer en principe les sachets de lait de masse inférieur à 250g.
+		\begin{enumerate}
+			\item[$\bullet$] Si un sachet de lait caillé à 240g, la probabilité qu'il soit éliminé est de 0,7.
+			\item[$\bullet$] Si un sachet de lait caillé à 230g, la probabilité qu'il soit éliminé est de 0,8.
+			\item[$\bullet$] Si un sachet de lait caillé à 220g, il est systématiquement éliminé.
+			\item[$\bullet$] Si un sachet  de lait caillé à une masse supérieur ou égale à 250g, il est systématiquement accepté.
+		\end{enumerate}
+	\begin{enumerate}
+		\item Justifier que la probabilité qu'un sachet de lait de 240g soit éliminé est de 0,098.
+		\item Calculer la probabilité pour qu'un sachet de lait caillé de cette société soit éliminé.
 	\end{enumerate}
+	\end{enumerate}
+	%Fin de l'exercice 1
+	
+	%Début de l'exercice 2
+	\section*{EXERCICE 2}
+	On teste un médicament sur un ensemble d'individus ayant un taux de glycémie anormalement élevé. Pour cela, $60 \%$ des individus prennent le médicament, les autres recevant une substance neutre et l'on étudie à l'aide d'un test la baisse du taux de glycémie.\\
+	Chez les individus ayant pris le médicament, on constate une baisse de taux avec une probabilité de 0,8. On ne constate aucune baisse de ce taux pour $90\%$  des personnes ayant reçu la substance neutre.
+	\begin{enumerate}
+		\item Calculer la probabilité d'avoir une baisse de taux de glycémie sachant qu'on a pris le médicament.
+		\item Démontrer que la probabilité d'avoir une baisse de taux de glycémie est 0,52.
+		\item On soumet au test un individu pris au hasard. Quelle est la probabilité qu'il ait pris le médicament sachant que l'on constate une baisse de taux de glycémie?
+		\item On contrôle 5 individus au hasard.
+		\begin{enumerate}
+			\item Quelle est la probabilité d'avoir exactement deux personnes dont le taux de glycémie a baissé?
+			\item Quelle est la probabilité d'avoir au moins un individu dont le taux de glycémie a baissé?
+		\end{enumerate}
+		\item On contrôle $n$ individus pris au hasard. ($n$ est un nombre entier naturel non nul)\\
+		Déterminer $n$ pour que la probabilité d'avoir au moins un individus dont le taux de glycémie a baissé soit supérieur à 0,98.
+	\end{enumerate}
+	%Fin de l'exercice 2
+	
+	%Début de l'exercice 3
+	\section*{EXERCICE 3}
+	Une urne contient une boule rouge, deux boules blanches et trois boules noires indiscernables au toucher.\\
+	On tire au hasard successivement et avec remise trois boules de l'urne.\\
+	Soit les événement suivantes:\\
+	A: "les trois boules tirées sont de même couleur"\\
+	B: "Il n'y a aucune boule blanche parmi les boules tirées.\\
+	C: "Il y a exactement deux boules blanches parmi les boules tirées."
+	\begin{enumerate}
+		\item Monter que $p(A)=\frac{1}{6}$ et $p(B)$$\frac{8}{27}$
+		\item Calculer $p(C)$
+	\end{enumerate}
+	%Fin de l'exercice 3
+	
+	%Début de l'exercice 4
+	\section*{EXERCICE 4}
+	Une urne contient huit boules indiscernables au toucher: cinq boules blanches, trois boules rouges et deux boules vertes (Voir la figure ci-dessous)\\
+	\begin{center}
+		\begin{tikzpicture}
+			\draw[thick] (-4,4)--(-4,0);
+			\draw[thick] (-4,0)--(4,0);
+			\draw[thick] (4,0)--(4,4);
+			\draw[fill=green] (-3,1) circle [radius = 0.5];
+			\draw[fill=green] (-3,3) circle [radius = 0.5];
+			\draw[fill=red] (-1.75,1) circle [radius = 0.5];
+			\draw[fill=red] (-1.75,3) circle [radius = 0.5];
+			\draw[fill=red] (-1,2) circle [radius = 0.5];
+			\draw[fill=white] (0,1) circle [radius = 0.5];
+			\draw[fill=white] (0,3) circle [radius = 0.5];
+			\draw[fill=white] (1.5,1) circle [radius = 0.5];
+			\draw[fill=white] (1.5,3) circle [radius = 0.5];
+			\draw[fill=white] (3,2) circle [radius = 0.5];
+		\end{tikzpicture}
+	\end{center}
+	On tire au hasard et simultanément quatre boules de l'urne.
+	\begin{enumerate}
+		\item Soit A l'événement "Parmi les quatre boules tirées il y a une seule boule verte" et B l'événement "Parmi les quatre boules tirées, il y a exactement trois boules de même couleur". Montrons que $p(A)=\frac{8}{15}$ et $p(B)=\frac{19}{70}$
+		\item Soit $X$ la variable aléatoire qui à chaque tirage associe le nombre de boules vertes tirées.
+		\begin{enumerate}
+			\item Montrer que $p(X=2)=\frac{2}{15}$
+			\item Déterminer la loi de probabilité de la variable $X$ et montrer que l'espérance mathématique est égale à $\frac{4}{5}.$
+		\end{enumerate}
+	\end{enumerate}
+%Fin de l'exercice 4
+
+%Début de l'exercice 5
+\section*{EXERCICE 5}
+	Une étude statistique montre que dans une ville donnée; $15\%$ des individus âgés de moins de 60 ans et $80\%$ des individus âgés de plus 60 ans ont été vaccinés contre la grippe.\\ Les individus âgés de plus de 60 ans représentent $30\%$ de la population. On choisit au hasard, une personne de cette population et on considère les événements suivants:\\
+	\begin{enumerate}
+		\item[$\bullet$] G: \fg la personne est âgés de plus de 60 ans\og{}.
+		\item[$\bullet$] V: \fg La personne est vaccinée\og{}.
+	\end{enumerate}
+	\begin{enumerate}
+		\item Recopier et compléter l'arbre de probabilité ci-dessous:\\
+		\begin{center}
+			\begin{tikzpicture}
+				\draw[thick, ->] (-4,0) -- (-2,1) node[anchor=west] {G};  
+				\draw[thick, ->] (-4,0) -- (-2,-1) node[anchor=west] {$\overline{G}$};
+				\draw[thick, ->] (-1.5,1) -- (1,1.75) node[anchor=west] {V};
+				\draw[thick, ->] (-1.5,1) -- (1, 0.25) node[anchor=west] {$\overline{V}$};
+				\draw[thick, ->] (-1.5,-1) -- (1,-0.25) node[anchor=west] {V};
+				\draw[thick, ->] (-1.5,-1) -- (1, -1.75) node[anchor=west] {$\overline{V}$};
+			\end{tikzpicture}
+		\end{center}
+	\item Montrer que la probabilité pour qu'une personne soit vacciné est égale à 0,345.
+	\item La personne choisie étant vaccinée, quelle est la probabilité pour qu'elle soit âgée de moins de 60 ans.
+	\item On choisit au hasard 10 personnes âgées de plus de 60ans. Calculer la probabilité pour que deux exactement d'entre elles soient vaccinées.
+	\item On choisit, au hasard, $n$ personnes âgées de plus de 60 ans.
+		\begin{enumerate}
+			\item Quelle est la probabilité pour qu'aucune d'entre elles ne soit vaccinée?
+			\item Déterminer la probabilité $p_n$ pour que l'une au moins d'entre elle soit vaccinée.
+			\item Déterminer la plus petite valeur de $n$ pour que $p_n \geq 0,9$
+		\end{enumerate}
+	\end{enumerate}
+
 \end{document}
