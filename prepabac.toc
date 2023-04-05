@@ -1,0 +1,6 @@
+\babel@toc {french}{}\relax 
+\contentsline {part}{I\hspace {1em}RECCUEILS D'EXERCICES}{2}{}%
+\contentsline {chapter}{\numberline {1}Nombres complexes et transformations du plan}{3}{}%
+\contentsline {chapter}{\numberline {2}Dénombrement et probabilité}{5}{}%
+\contentsline {chapter}{\numberline {3}Suite numérique}{8}{}%
+\contentsline {chapter}{\numberline {4}Statistiques}{10}{}%
